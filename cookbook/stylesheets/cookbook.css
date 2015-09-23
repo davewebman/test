@@ -1,0 +1,29 @@
+/*  ================ MY STYLESHEETS SNIPPETS ================ */
+
+/* [imports] */
+@charset "UTF-8";
+@import '3L/3L';
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+/* [animation - transition] */
+@-webkit-keyframes Anim { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes Anim { from { opacity:0; } to { opacity:1; } }
+@keyframes Anim { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-it {
+    -webkit-animation:Anim ease-in 1;
+    -moz-animation:Anim ease-in 1;
+    animation:Anim ease-in 1;
+    opacity: 0;
+    filter: alpha(opacity=70);
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-duration:4s;
+    -moz-animation-duration:4s;
+    animation-duration:4s;}
+ 
+.fade-it {
+	-webkit-animation-delay: 0.6s;
+	-moz-animation-delay: 0.6s;
+	animation-delay: 0.6s;}

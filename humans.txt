@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	
+	* David - прототипирование.
+	<CODElab/> - Команда независимых разработчиков.
+
+# THANKS
+
+    David
+
+# TECHNOLOGY COLOPHON
+
+    LANGUAGE: html5, css3 => (preprocess to) less, jQuery.
+    USER INTERFACE KIT: uikit, 
+    SCRIPTS: basket.js, modernizr,
+    LIBS: 3L, semantic gs, 

@@ -1,0 +1,108 @@
+// [default tag' rule and effects] Start  --->
+
+// Default Body.
+body {
+    font-family: "OpenSansCondLight", "Tahoma", "Arial", "Verdana", sans-serif;
+    direction: ltr;
+    background: #fff;
+}
+
+// [font-face] Start --->
+.font-face('OpenSansCondLight','OpenSansCondLight','fonts/',400,normal);
+.font-face('OpenSansCondBold','OpenSansCondBold','fonts/',700,bold);
+.font-face('OpenSansCondLightItalic','OpenSansCondLightItalic','fonts/',400,normal);
+// <--- End [font-face] *
+
+// Default Variables.
+@font: "OpenSansCondLight", "Tahoma", "Arial", "Verdana", sans-serif;
+@color0: #000;
+
+// Default Effects.
+a { .transition(color .3s, height .5s); }
+
+// Clear floats.
+div.clear {
+    clear: left;
+}
+
+// Default Wrap.
+div.wrapper {
+    .size(1200px,auto);
+    margin: 0 auto;
+    border: 1px solid green;
+}
+
+// Default Parameters for Main Div.
+.mixinParam(
+    @margin: 0px auto 0px auto;
+    @padding: 0px;
+) {
+    margin: @margin; 
+    padding: @padding;
+}
+
+// @border: 1px solid @color1;
+// border: @border;
+
+// Default Parameters for inner Div's.
+.mixinParam2(
+    @margin: 0px;
+    @padding: 0px;
+    @float: left;
+) {
+    margin: @margin; 
+    padding: @padding;
+    float: @float;
+}
+
+// Default Parameters for margins & paddings.
+.clearPad(
+    @margin: 0;
+    @padding: 0;
+) {
+    margin: @margin;
+    padding: @padding;
+}
+
+// Default Parameters for Title p.
+.mixinText(
+    @fontVar: normal 15px @font;
+    @margin: 0; 
+    @padding: 0;
+    @line: 26px;
+    @align: center;
+) {
+    font: @fontVar;
+    margin: @margin;
+    padding: @padding;
+    text-align: @align;
+    line-height: @line;
+}
+
+// Default Parameters for H1 normal.
+.mixinh1normal(
+    @fontVar: normal 33px @font;
+    @align: center;
+    @line: 42px;
+    @transform: uppercase;
+) {
+    font: @fontVar;
+    text-align: @align;
+    line-height: @line;
+    text-transform: @transform;
+}
+
+// Default Parameters for H1 bold.
+.mixinh1bold(
+    @fontVar: bold 33px @font;
+    @align: center;
+    @line: 42px;
+    @transform: uppercase;
+) {
+    font: @fontVar;
+    text-align: @align;
+    line-height: @line;
+    text-transform: @transform;
+}
+
+// <--- End [default tag' rule and effects] *

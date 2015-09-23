@@ -1,0 +1,86 @@
+//*==================== @ IMPORT MIXINS; ====================*//
+
+// [normalize, reset or/and h5bp] Start --->
+    .normalize();
+    .reset();
+    // .h5bp();
+// <--- End [normalize, reset or/and h5bp] *
+
+// Start [import brands markup] --->
+   @import 'libs/variables';
+// <--- End [import brands markup] *
+
+// Start [import 3l mixins] --->
+    @import 'libs/3L';
+// <--- End [import 3l mixins] *
+
+// Start [import kube ui] --->
+   @import 'libs/flexbox';
+// <--- End [import kube ui] *
+
+// Start [import kube ui] --->
+   // @import 'libs/semantic/semantic';
+// <--- End [import kube ui] *
+
+// Start [import kube ui] --->
+   // @import 'libs/icons/font-awesome';
+// <--- End [import kube ui] *
+
+
+//*==================== @ USER LESS WORK; ====================*//
+
+// Start [import head] --->
+    // @import 'libs/temp/head';
+// <--- End [import head] *
+
+header, nav, section { .flex-display; }
+
+header {
+  .flex-flow(row wrap);
+
+  div.cell {
+    .flex(0 0 298px);
+    border: 1px solid;
+    text-align: center;
+
+    h1 {
+      font: bold 44px @font;
+      color: @color0;
+      margin: 0; padding: 0px 20px 0px 20px;
+    }
+
+    p {
+      font: bold 24px @font;
+      color: @color0;
+      padding: 0px 20px 0px 20px;
+    }
+  }
+}
+
+nav {
+
+  div.cell {
+    .flex(1 0 auto);
+    border: 1px solid;
+  }
+}
+
+section.row {
+  .flex-flow(row wrap);
+
+  div.cell {
+    .flex(1 0 298px);
+    height: 200px;
+    border: 1px solid;
+  }
+}
+
+section.slider {
+  .flex-flow(row wrap);
+
+  div.cell {
+    .flex(1 0 auto);
+    height: 300px;
+    border: 1px solid;
+  }
+}
